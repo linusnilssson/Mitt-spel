@@ -128,3 +128,9 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
+body.changee-background {
+  background-image: url(syskon.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}

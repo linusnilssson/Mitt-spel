@@ -1,3 +1,5 @@
+let currentQuestionIndex = 0;
+
 document.addEventListener("DOMContentLoaded", function () {
   const playerForm = document.getElementById("playerForm"); // Textinmatningsfältet för spelarnamnet
   const playerNameInput = document.getElementById("playerName");
@@ -66,6 +68,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (playerName) {
       welcomeMessage.innerHTML = "Välkommen " + playerName;
+    }
+  });
+
+  // Kod för fråga 1 här
+  const nextTask = document.getElementById("nextTask"); // Element för nästa fråga
+  const göteborgButton = document.getElementById("göteborgButton"); // Göteborg-knapp
+  const stockholmButton = document.getElementById("stockholmButton"); // Stockholm-knapp
+  const malmöButton = document.getElementById("malmöButton"); // Malmö-knapp
+
+  // När användaren klickar på Stockholm-knapp
+  stockholmButton.addEventListener("click", function () {
+    const currentQuestion = questions[currentQuestionIndex];
+    if (currentQuestion.options[1].isCorrect) {
+      // Index 1 motsvarar stockholm i frågans alternativ
+
+      // Här ändras bakgrundsbilden om svaret är korrekt
+      document.body.classList.add("changee-background");
+      // Gömmer denna fråga
+      nextTask.style.display = "none";
+      // Meddelande som säger att det var rätt svar
+      welcomeMessage.innerHTML =
+        "Rätt! Nu hittade jag ett av mina syskon, fortsätt hjälpa mig:)";
+      // visar nästa fråga
+      nextTask1.style.display = "block";
+    }
+  });
+
+  // När användaren klickar på Göteborg-knapp
+  göteborgButton.addEventListener("click", function () {
+    const currentQuestion = questions[currentQuestionIndex];
+    if (!currentQuestion.options[0].isCorrect) {
+      // Index 0 motsvarar göteborg i frågans alternativ
+
+      // Här visas alert-meddelande om svaret är fel
+      alert("Fel svar. Försök igen");
+      // Meddelande på sidan att det var fel
+      welcomeMessage.innerHTML = "Det var tyvärr fel, testa igen :)";
     }
   });
 });

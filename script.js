@@ -256,4 +256,87 @@ document.addEventListener("DOMContentLoaded", function () {
       welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
     }
   });
+
+  // Kod för fråga 4 här
+  const nextTask3 = document.getElementById("nextTask3");
+  const kinaButton = document.getElementById("kinaButton");
+  const ungernButton = document.getElementById("ungernButton");
+  const egyptenButton = document.getElementById("egyptenButton");
+
+  // När användaren klickar på Egypten-knapp
+  egyptenButton.addEventListener("click", function () {
+    const currentQuestion = questions4[currentQuestionIndex];
+    if (currentQuestion.options[2].isCorrect) {
+      // Index 2 motsvarar Egypten i frågans alternativ
+
+      // Ändrar bakgrundsbilden om svaret är rätt
+      document.body.classList.add("changeeeee-background");
+      // Tar bort den nuvarande bakgrundsbilden
+      document.body.classList.remove("changeeee-background");
+      // Meddelande på sidan som säger att det var rätt svar
+      welcomeMessage.innerHTML =
+        "Nu har du hjälpt mig hitta hela familjen. Tack så mycket för hjälpen!!";
+      // Gömmer denna fråga
+      nextTask3.style.display = "none";
+      // Visar knapp för att spela igen
+      playagain.style.display = "block";
+    }
+  });
+
+  // När användaren klickar på Kina-knapp
+  kinaButton.addEventListener("click", function () {
+    const currentQuestion = questions4[currentQuestionIndex];
+    if (!currentQuestion.options[0].isCorrect) {
+      // Index 0 motsvarar Kina i frågans alternativ
+
+      // Här visas meddelande om svaret är fel
+      alert("Det var tyvärr fel, nu får vi börja om..");
+      // Visar den första frågan igen
+      nextTask.style.display = "block";
+      // Gömmer nuvarande frågan
+      nextTask3.style.display = "none";
+      // Tar bort tidigare bakgrundsbild
+      document.body.classList.remove("changee-background");
+      // Tar bort tidigare bakgrundsbild
+      document.body.classList.remove("changeee-background");
+      // Tar bort nuvarande bakgrundsbild
+      document.body.classList.remove("changeeee-background");
+      // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
+      document.body.classList.add("change-background");
+      // Meddelande på sidan som säger att det var fel och att man får börja om
+      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
+    }
+  });
+
+  // När användaren klickar på Ungern-knapp
+  ungernButton.addEventListener("click", function () {
+    const currentQuestion = questions4[currentQuestionIndex];
+    if (!currentQuestion.options[1].isCorrect) {
+      // Index 1 motsvarar Ungern i frågans alternativ
+
+      // Här visas meddelande om svaret är fel
+      alert("Det var tyvärr fel, nu får vi börja om..");
+      // Visar den första frågan igen
+      nextTask.style.display = "block";
+      // Gömmer nuvarande frågan
+      nextTask3.style.display = "none";
+      // Tar bort tidigare bakgrundsbild
+      document.body.classList.remove("changee-background");
+      // Tar bort tidigare bakgrundsbild
+      document.body.classList.remove("changeee-background");
+      // Tar bort nuvarande bakgrundsbild
+      document.body.classList.remove("changeeee-background");
+      // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
+      document.body.classList.add("change-background");
+      // Meddelande på sidan som säger att det var fel och att man får börja om
+      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
+    }
+  });
+
+  // Spela igen knapp
+  const playAgainButton = document.getElementById("playagain");
+  // När man klickar på knappen kommer man till första sidan/restart
+  playAgainButton.addEventListener("click", function () {
+    window.location.href = "mittspel.html";
+  });
 });

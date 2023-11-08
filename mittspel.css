@@ -1,3 +1,4 @@
+/* Bakgrundsbild startsidan */
 body {
   background-image: url(fjärde.webp);
   background-size: cover;
@@ -97,6 +98,7 @@ p {
   display: flex;
 }
 
+/* Bakgrundsbild för fråga 1 */
 body.change-background {
   background-image: url(lionbaby\ second.jpeg);
   background-size: cover;
@@ -129,20 +131,46 @@ ul {
   padding: 0;
 }
 
+/* Bakgrundsbild för fråga 2 */
 body.changee-background {
   background-image: url(syskon.jpeg);
   background-size: cover;
   background-attachment: fixed;
 }
 
+/* Bakgrundsbild för fråga 3 */
 body.changeee-background {
   background-image: url(flera\ s.webp);
   background-size: cover;
   background-attachment: fixed;
 }
 
+/* Bakgrundsbild för fråga 4 */
 body.changeeee-background {
   background-image: url(lejon\ first.jpeg);
   background-size: cover;
   background-attachment: fixed;
+}
+
+/* Bakgrundsbild när man klarat spelet */
+body.changeeeee-background {
+  background-image: url(familjen.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#playagain {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  height: 50px;
+  width: 250px;
+  background-color: rgb(225, 225, 225);
+  border: 2px solid gray;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
 }

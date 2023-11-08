@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
       welcomeMessage.innerHTML =
         "Rätt, nu har vi hittat alla mina syskon. Bara mamma och pappa kvar :)";
       // Gömmer denna fråga
-      nextTask.style.display = "none";
+      nextTask1.style.display = "none";
       // Visar nästa fråga
       nextTask2.style.display = "block";
     }
@@ -183,6 +183,76 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
       document.body.classList.add("change-background");
       // Meddelande på sidan att det var fel
+      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
+    }
+  });
+
+  // Kod för fråga 3 här
+  const nextTask2 = document.getElementById("nextTask2");
+  const tiokgButton = document.getElementById("tiokgButton");
+  const ettkgButton = document.getElementById("ettkgButton");
+  const tvåkgButton = document.getElementById("tvåkgButton");
+
+  // När användaren klickar på 1kg-knapp
+  ettkgButton.addEventListener("click", function () {
+    const currentQuestion = questions3[currentQuestionIndex];
+    if (currentQuestion.options[1].isCorrect) {
+      // Index 1 motsvarar 1kg i frågans alternativ
+
+      // Ändrar bakgrundsbilden om svaret är rätt
+      document.body.classList.add("changeeee-background");
+      // Tar bort den nuvarande bakgrundsbilden
+      document.body.classList.remove("changeee-background");
+      // Meddelande på sidan som säger att det var rätt svar
+      welcomeMessage.innerHTML =
+        "Rätt, och där hittade vi mamma! Nu är det bara pappa kvar :)";
+      // Gömmer denna fråga
+      nextTask2.style.display = "none";
+      // Visar nästa fråga
+      nextTask3.style.display = "block";
+    }
+  });
+
+  // När användaren klickar på 10kg-knapp
+  tiokgButton.addEventListener("click", function () {
+    const currentQuestion = questions3[currentQuestionIndex];
+    if (!currentQuestion.options[0].isCorrect) {
+      // Index 0 motsvarar 10kg i frågans alternativ
+
+      // Här visas meddelande om svaret är fel
+      alert("Det var tyvärr fel, nu får vi börja om..");
+      // Visar den första frågan igen
+      nextTask.style.display = "block";
+      // Gömmer nuvarande frågan
+      nextTask2.style.display = "none";
+      // Tar bort föregående bakgrundsbilden och nuvarande
+      document.body.classList.remove("changee-background");
+      document.body.classList.remove("changeee-background");
+      // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
+      document.body.classList.add("change-background");
+      // Meddelande att det var fel
+      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
+    }
+  });
+
+  // När användaren klickar på 2kg-knapp
+  tvåkgButton.addEventListener("click", function () {
+    const currentQuestion = questions3[currentQuestionIndex];
+    if (!currentQuestion.options[2].isCorrect) {
+      // Index 2 motsvarar 2kg i frågans alternativ
+
+      // Här visas meddelande om svaret är fel
+      alert("Det var tyvärr fel, nu får vi börja om..");
+      // Visar den första frågan igen
+      nextTask.style.display = "block";
+      // Gömmer nuvarande frågan
+      nextTask2.style.display = "none";
+      // Tar bort föregående bakgrundsbilden och nuvarande
+      document.body.classList.remove("changee-background");
+      document.body.classList.remove("changeee-background");
+      // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
+      document.body.classList.add("change-background");
+      // Meddelande att det var fel
       welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
     }
   });

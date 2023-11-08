@@ -140,3 +140,9 @@ body.changeee-background {
   background-size: cover;
   background-attachment: fixed;
 }
+
+body.changeeee-background {
+  background-image: url(lejon\ first.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}

@@ -134,3 +134,9 @@ body.changee-background {
   background-size: cover;
   background-attachment: fixed;
 }
+
+body.changeee-background {
+  background-image: url(flera\ s.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}

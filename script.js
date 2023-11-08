@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("changee-background");
       // Gömmer denna fråga
       nextTask.style.display = "none";
-      // Meddelande som säger att det var rätt svar
+      // Meddelande på sidan som säger att det var rätt svar
       welcomeMessage.innerHTML =
         "Rätt! Nu hittade jag ett av mina syskon, fortsätt hjälpa mig:)";
       // visar nästa fråga
@@ -105,6 +105,85 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Fel svar. Försök igen");
       // Meddelande på sidan att det var fel
       welcomeMessage.innerHTML = "Det var tyvärr fel, testa igen :)";
+    }
+  });
+
+  // När användaren klickar på Malmö-knapp
+  malmöButton.addEventListener("click", function () {
+    const currentQuestion = questions[currentQuestionIndex];
+    if (!currentQuestion.options[2].isCorrect) {
+      // Index 2 motsvarar Malmö i frågans alternativ
+
+      // Här visas alert-meddelande om svaret är fel
+      alert("Fel svar. Försök igen");
+      // Meddelande på sidan att det var fel
+      welcomeMessage.innerHTML = "Det var tyvärr fel, testa igen :)";
+    }
+  });
+
+  // Kod för fråga 2 här
+  const nextTask1 = document.getElementById("nextTask1"); // Element för nästa fråga
+  const tjugoettButton = document.getElementById("tjugoettButton"); // 21-knapp
+  const tjugotvåButton = document.getElementById("tjugotvåButton"); // 22-knapp
+  const tjugotreButton = document.getElementById("tjugotreButton"); // 23-knapp
+
+  // När användaren klickar på 21-knapp
+  tjugoettButton.addEventListener("click", function () {
+    const currentQuestion = questions2[currentQuestionIndex];
+    if (currentQuestion.options[0].isCorrect) {
+      // Index 0 motsvarar 21 i frågans alternativ
+
+      // Här ändras bakgrundsbilden om svaret är rätt
+      document.body.classList.add("changeee-background");
+      // Meddelande på sidan som säger att det var rätt svar
+      welcomeMessage.innerHTML =
+        "Rätt, nu har vi hittat alla mina syskon. Bara mamma och pappa kvar :)";
+      // Gömmer denna fråga
+      nextTask.style.display = "none";
+      // Visar nästa fråga
+      nextTask2.style.display = "block";
+    }
+  });
+
+  // När användaren klickar på 22-knapp
+  tjugotvåButton.addEventListener("click", function () {
+    const currentQuestion = questions2[currentQuestionIndex];
+    if (!currentQuestion.options[1].isCorrect) {
+      // Index 1 motsvarar 22 i frågans alternativ
+
+      // Här visas meddelande om svaret är fel
+      alert("Det var tyvärr fel, nu får vi börja om..");
+      // Visar den första frågan igen
+      nextTask.style.display = "block";
+      // Gömmer nuvarande frågan
+      nextTask1.style.display = "none";
+      // Tar bort nuvarande bakgrundsbilden
+      document.body.classList.remove("changee-background");
+      // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
+      document.body.classList.add("change-background");
+      // Meddelande på sidan att det var fel
+      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
+    }
+  });
+
+  // När användaren klickar på 23-knapp
+  tjugotreButton.addEventListener("click", function () {
+    const currentQuestion = questions2[currentQuestionIndex];
+    if (!currentQuestion.options[2].isCorrect) {
+      // Index 2 motsvarar 23 i frågans alternativ
+
+      // Här visas meddelande om svaret är fel
+      alert("Det var tyvärr fel, nu får vi börja om..");
+      // Visar den första frågan igen
+      nextTask.style.display = "block";
+      // Gömmer nuvarande frågan
+      nextTask1.style.display = "none";
+      // Tar bort nuvarande bakgrundsbilden
+      document.body.classList.remove("changee-background");
+      // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
+      document.body.classList.add("change-background");
+      // Meddelande på sidan att det var fel
+      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
     }
   });
 });

@@ -1,5 +1,5 @@
 body {
-  background-image: url();
+  background-image: url(fjärde.webp);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -79,4 +79,52 @@ input {
 
 input:hover {
   cursor: pointer;
+}
+
+p {
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+#showPlayerName {
+  font-size: 40px;
+  color: white;
+  justify-content: center;
+  display: flex;
+}
+
+body.change-background {
+  background-image: url(lionbaby\ second.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+li button {
+  margin-top: 2px;
+  height: 50px;
+  width: 250px;
+  margin-left: 15px;
+  background-color: rgb(225, 225, 225);
+  border: 2px solid gray;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+#answer-options li {
+  list-style-type: none;
+  padding: 0;
 }

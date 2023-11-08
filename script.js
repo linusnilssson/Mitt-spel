@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const playerForm = document.getElementById("playerForm"); // Textinmatningsfältet för spelarnamnet
+  const playerNameInput = document.getElementById("playerName");
   const welcomeMessage = document.getElementById("welcomeMessage"); // Elementet för välkomstmeddelandet
-  const startGameButton = document.getElementById("startGameButton");
+  const startGameButton = document.getElementById("startGameButton"); // Start-knappen
 
   // Array med frågor och svar
   const questions = [
@@ -47,4 +48,24 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
   ];
+
+  startGameButton.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const playerName = playerNameInput.value;
+
+    if (playerName.trim() === "") {
+      // Spelaren har inte skrivit in sitt namn
+      alert("Du måste skriva in ditt namn");
+    } else {
+      document.body.classList.add("change-background");
+      playerForm.style.display = "none";
+      nextTask.style.display = "block";
+      localStorage.setItem("playerName", playerName);
+    }
+
+    if (playerName) {
+      welcomeMessage.innerHTML = "Välkommen " + playerName;
+    }
+  });
 });

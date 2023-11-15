@@ -57,6 +57,6 @@ If you want to play again, click on "Press to Play Again" after completing the g
 
 ---
 
-**Created by Linus**
-
 [GitHub](https://github.com/linusnilssson/Mitt-spel)
+
+**Created by Linus**

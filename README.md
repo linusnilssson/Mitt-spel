@@ -24,7 +24,7 @@ Welcome to my interactive game where you help a lion cub find its way home to it
 - Stockholm (Correct)
 - Malmo (Incorrect)
 
-#### Question 2: What is the total sum on a die?
+#### Question 2: What is the total sum on a dice?
 
 - 21 (Correct)
 - 22 (Incorrect)

@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (playerName.trim() === "") {
       // Spelaren har inte skrivit in sitt namn
-      alert("Du måste skriva in ditt namn");
+      alert("You must enter your name");
     } else {
       document.body.classList.add("change-background");
       playerForm.style.display = "none";
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (playerName) {
-      welcomeMessage.innerHTML = "Välkommen " + playerName;
+      welcomeMessage.innerHTML = "Welcome " + playerName;
     }
   });
 
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nextTask.style.display = "none";
       // Meddelande på sidan som säger att det var rätt svar
       welcomeMessage.innerHTML =
-        "Rätt! Nu hittade jag ett av mina syskon, fortsätt hjälpa mig:)";
+        "Correct! Now I found one of my siblings, keep helping me :)";
       // visar nästa fråga
       nextTask1.style.display = "block";
     }
@@ -102,9 +102,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 0 motsvarar göteborg i frågans alternativ
 
       // Här visas alert-meddelande om svaret är fel
-      alert("Fel svar. Försök igen");
+      alert("Wrong answer, try again");
       // Meddelande på sidan att det var fel
-      welcomeMessage.innerHTML = "Det var tyvärr fel, testa igen :)";
+      welcomeMessage.innerHTML = "Wrong answer, try again :)";
     }
   });
 
@@ -115,9 +115,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 2 motsvarar Malmö i frågans alternativ
 
       // Här visas alert-meddelande om svaret är fel
-      alert("Fel svar. Försök igen");
+      alert("Wrong answer, try again");
       // Meddelande på sidan att det var fel
-      welcomeMessage.innerHTML = "Det var tyvärr fel, testa igen :)";
+      welcomeMessage.innerHTML = "Wrong answer, try again :)";
     }
   });
 
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("changeee-background");
       // Meddelande på sidan som säger att det var rätt svar
       welcomeMessage.innerHTML =
-        "Rätt, nu har vi hittat alla mina syskon. Bara mamma och pappa kvar :)";
+        "Correct, now we've found all my siblings. Only mom and dad left :)";
       // Gömmer denna fråga
       nextTask1.style.display = "none";
       // Visar nästa fråga
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 1 motsvarar 22 i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("Det var tyvärr fel, nu får vi börja om..");
+      alert("It was unfortunately wrong, now we have to start over.");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -162,7 +162,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
       document.body.classList.add("change-background");
       // Meddelande på sidan att det var fel
-      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
+      welcomeMessage.innerHTML =
+        "It was unfortunately wrong, now we have to start over :)";
     }
   });
 
@@ -173,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 2 motsvarar 23 i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("Det var tyvärr fel, nu får vi börja om..");
+      alert("It was unfortunately wrong, now we have to start over.");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -183,7 +184,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
       document.body.classList.add("change-background");
       // Meddelande på sidan att det var fel
-      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
+      welcomeMessage.innerHTML =
+        "It was unfortunately wrong, now we have to start over :)";
     }
   });
 
@@ -205,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.remove("changeee-background");
       // Meddelande på sidan som säger att det var rätt svar
       welcomeMessage.innerHTML =
-        "Rätt, och där hittade vi mamma! Nu är det bara pappa kvar :)";
+        "Correct, and there we found mom! Now only dad is left :)";
       // Gömmer denna fråga
       nextTask2.style.display = "none";
       // Visar nästa fråga
@@ -220,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 0 motsvarar 10kg i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("Det var tyvärr fel, nu får vi börja om..");
+      alert("It was unfortunately wrong, now we have to start over :)");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -231,7 +233,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
       document.body.classList.add("change-background");
       // Meddelande att det var fel
-      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
+      welcomeMessage.innerHTML =
+        "It was unfortunately wrong, now we have to start over :)";
     }
   });
 
@@ -242,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 2 motsvarar 2kg i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("Det var tyvärr fel, nu får vi börja om..");
+      alert("It was unfortunately wrong, now we have to start over :)");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -253,7 +256,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
       document.body.classList.add("change-background");
       // Meddelande att det var fel
-      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
+      welcomeMessage.innerHTML =
+        "It was unfortunately wrong, now we have to start over :)";
     }
   });
 
@@ -275,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.remove("changeeee-background");
       // Meddelande på sidan som säger att det var rätt svar
       welcomeMessage.innerHTML =
-        "Nu har du hjälpt mig hitta hela familjen. Tack så mycket för hjälpen!!";
+        "Now you've helped me find the whole family. Thank you so much for your help!";
       // Gömmer denna fråga
       nextTask3.style.display = "none";
       // Visar knapp för att spela igen
@@ -290,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 0 motsvarar Kina i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("Det var tyvärr fel, nu får vi börja om..");
+      alert("It was unfortunately wrong, now we have to start over :)");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -304,7 +308,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
       document.body.classList.add("change-background");
       // Meddelande på sidan som säger att det var fel och att man får börja om
-      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
+      welcomeMessage.innerHTML =
+        "It was unfortunately wrong, now we have to start over :)";
     }
   });
 
@@ -315,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 1 motsvarar Ungern i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("Det var tyvärr fel, nu får vi börja om..");
+      alert("It was unfortunately wrong, now we have to start over :)");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -329,7 +334,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ändrar bakgrundsbilden till föregående (Fråga 1 Bakgrundsbild)
       document.body.classList.add("change-background");
       // Meddelande på sidan som säger att det var fel och att man får börja om
-      welcomeMessage.innerHTML = "Det var tyvärr fel, nu får vi börja om..";
+      welcomeMessage.innerHTML =
+        "It was unfortunately wrong, now we have to start over :)";
     }
   });
 

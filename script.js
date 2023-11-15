@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 1 motsvarar 22 i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("It was unfortunately wrong, now we have to start over.");
+      alert("Unfortunately it was wrong, now we have to start over :)");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("change-background");
       // Meddelande på sidan att det var fel
       welcomeMessage.innerHTML =
-        "It was unfortunately wrong, now we have to start over :)";
+        "Unfortunately it was wrong, now we have to start over :)";
     }
   });
 
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 2 motsvarar 23 i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("It was unfortunately wrong, now we have to start over.");
+      alert("Unfortunately it was wrong, now we have to start over :)");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("change-background");
       // Meddelande på sidan att det var fel
       welcomeMessage.innerHTML =
-        "It was unfortunately wrong, now we have to start over :)";
+        "Unfortunately it was wrong, now we have to start over :)";
     }
   });
 
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 0 motsvarar 10kg i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("It was unfortunately wrong, now we have to start over :)");
+      alert("Unfortunately it was wrong, now we have to start over :)");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("change-background");
       // Meddelande att det var fel
       welcomeMessage.innerHTML =
-        "It was unfortunately wrong, now we have to start over :)";
+        "Unfortunately it was wrong, now we have to start over :)";
     }
   });
 
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 2 motsvarar 2kg i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("It was unfortunately wrong, now we have to start over :)");
+      alert("Unfortunately it was wrong, now we have to start over :)");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("change-background");
       // Meddelande att det var fel
       welcomeMessage.innerHTML =
-        "It was unfortunately wrong, now we have to start over :)";
+        "Unfortunately it was wrong, now we have to start over :)";
     }
   });
 
@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 0 motsvarar Kina i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("It was unfortunately wrong, now we have to start over :)");
+      alert("Unfortunately it was wrong, now we have to start over :)");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -309,7 +309,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("change-background");
       // Meddelande på sidan som säger att det var fel och att man får börja om
       welcomeMessage.innerHTML =
-        "It was unfortunately wrong, now we have to start over :)";
+        "Unfortunately it was wrong, now we have to start over :)";
     }
   });
 
@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Index 1 motsvarar Ungern i frågans alternativ
 
       // Här visas meddelande om svaret är fel
-      alert("It was unfortunately wrong, now we have to start over :)");
+      alert("Unfortunately it was wrong, now we have to start over :)");
       // Visar den första frågan igen
       nextTask.style.display = "block";
       // Gömmer nuvarande frågan
@@ -335,7 +335,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("change-background");
       // Meddelande på sidan som säger att det var fel och att man får börja om
       welcomeMessage.innerHTML =
-        "It was unfortunately wrong, now we have to start over :)";
+        "Unfortunately it was wrong, now we have to start over :)";
     }
   });
 
